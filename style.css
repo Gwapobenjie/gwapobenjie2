@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+}
+.borderStyle{
+    border: solid 2px green;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+header *{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+header{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    box-shadow: 0px 5px 10px rgb(91, 74, 243);  
+}
+
+header section{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+header section:hover{
+    color: rgb(69, 120, 228);
+    cursor: pointer;
+}
+
+body main{
+    height: 87vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main #sideBarLeft{
+    flex-grow: 1;
+    background-color: lightgreen;
+}
+
+main #sideBarRight{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: lightgreen;
+}
+
+body footer{
+    display: flex;
+    height: 50px;
+    background-color: lightgreen;
+}
+
+
+main #mainContent{
+    flex-grow: 8;
+    background-color: lightblue;
+}
+
+
+nav{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul>li{
+    min-width: 200px;
+}
+
+nav ul>li:hover{
+    color: rgb(69, 120, 228);
+    cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+    }
+
+    main .sideBar .box1{
+        display: none;
+    }
+
+    main .sideBar .box2{
+        display: none;
+    }
+
+    main .content .box2 {
+        display: none;
+    }
+}      
+    
+    
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .content
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {div{
+   background-color: yellow; 
+}}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {div{
+    background-color: brown;
+}}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    section, .content .box.box2, header.box.box2
+        display: flex;
+    }
